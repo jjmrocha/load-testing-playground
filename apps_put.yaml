@@ -1,0 +1,10 @@
+method: PUT
+endpoint: "http://127.0.0.1:8080/apps/{{ .Data.APP_ID }}"
+headers:
+    User-Agent: Beast/1
+    Content-Type: application/json
+request-body: >
+    {
+       "app-id": {{ .Data.APP_ID }},
+       "name": "{{ .Data.NAME }}"
+    }

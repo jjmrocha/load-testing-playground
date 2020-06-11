@@ -1,0 +1,4 @@
+method: GET
+endpoint: "http://127.0.0.1:8080/apps/{{ .Data.APP_ID }}"
+headers:
+    User-Agent: Beast/1
