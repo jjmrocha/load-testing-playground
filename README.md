@@ -1,6 +1,19 @@
 Load Testing Playground
 =======================
 
+#   for the Tested Application
+
+1. The frameworks being tested will implement the following endpoints:
+  * `PUT /apps/{app_id}` - With Body: 
+    ```json
+    {"app-id": {app-id}, "name": "{app name}"}
+    ```
+  * `GET /apps/{app_id}`
+  * `DELETE /apps/{app_id}`
+  2. The endpoinds should be available on `127.0.0.1:8080`
+3. Data must be stored on a `Postgres 12` database
+
+
 # Frameworks
 
 Currently we have the following implementations:
