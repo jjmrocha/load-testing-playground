@@ -1,15 +1,14 @@
-AppsApp - Flask version
-=======================
+AppsApp - Spring-boot version
+=============================
 
 Specs
 -----
 
-* Language: Python 3.7
-* Framework: Flask + Flask-Restful
-* ORM: SQLAlchemy
-* DB Migration: Alembic
+* Language: Java 11
+* Framework: Spring-boot
+* DB Migration: Flyway
 * Database: Postgres 12
-* HTTP Server: Gunicorn
+* HTTP Server: Undertow
 
 How to Run
 ----------

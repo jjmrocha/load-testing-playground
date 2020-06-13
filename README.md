@@ -19,8 +19,8 @@ Frameworks
 ----------
 
 Currently we have the following implementations:
-* Python
-  * [Flask](flask)
+* [Flask](flask) (Python)
+* [Spring-boot](spring) (Java)
 
 
 Load Testing

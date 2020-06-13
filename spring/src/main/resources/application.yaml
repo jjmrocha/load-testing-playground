@@ -1,0 +1,28 @@
+---
+spring:
+  application:
+    name: apps-app
+  datasource:
+    driver-class-name: ${DB_DRIVER:org.postgresql.Driver}
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jackson:
+    default-property-inclusion: NON_NULL
+  profiles:
+    active: local
+  main:
+    allow-bean-definition-overriding: true
+  autoconfigure:
+    exclude:
+      org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration,
+      org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+
+logging:
+  level:
+    net:
+      uiqui:
+        load: ${LOGGING_LEVEL:info}
+
+application:
+  base-error-type: "http://uiqui.net/load/errors/apps/"
