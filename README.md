@@ -5,7 +5,7 @@ Load Testing Playground
 
 1. The frameworks being tested will implement the following endpoints:
   * `PUT /apps/{app_id}` - With Body: 
-    ```json
+    ```
     {"app-id": {app-id}, "name": "{app name}"}
     ```
   * `GET /apps/{app_id}`
