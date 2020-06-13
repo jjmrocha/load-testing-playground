@@ -1,7 +1,7 @@
 Load Testing Playground
 =======================
 
-#   for the Tested Application
+# Specs for the Tested Application
 
 1. The frameworks being tested will implement the following endpoints:
   * `PUT /apps/{app_id}` - With Body: 
