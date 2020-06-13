@@ -1,10 +1,11 @@
-Python Load Testing Playground
-==============================
+Load Testing Playground
+=======================
 
 # Frameworks
 
 Currently we have the following implementations:
-* [Flask](flask)
+* Python
+  * [Flask](flask)
 
 
 # Load Testing
