@@ -14,7 +14,6 @@ RUN pip install --upgrade pipenv
 
 RUN pipenv install --system
 
-RUN pip install --upgrade meinheld
 RUN pip install --upgrade gunicorn
 RUN pip install --upgrade psycopg2
 

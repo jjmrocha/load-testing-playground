@@ -14,4 +14,4 @@ echo "#####################"
 
 cd $APP_HOME
 flask db upgrade
-exec gunicorn --workers=$N_WORKERS --bind=":8080" --worker-class="egg:meinheld#gunicorn_worker" $FLASK_APP
+exec gunicorn --workers=$N_WORKERS --bind=":8080" $FLASK_APP
