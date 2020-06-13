@@ -18,7 +18,7 @@ AppsApp - Flask version
     docker-compose build
     ```
 
-2. Lunch database
+2. Launch database in backgound
 
     ```commandline
     docker-compose up -d db
