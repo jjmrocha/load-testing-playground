@@ -1,7 +1,8 @@
 Load Testing Playground
 =======================
 
-# Specs for the Tested Application
+Specs for the Tested Application
+--------------------------------
 
 1. The frameworks being tested will implement the following endpoints:
   * `PUT /apps/{app_id}` - With Body: 
@@ -14,15 +15,17 @@ Load Testing Playground
 3. Data must be stored on a `Postgres 12` database
 
 
-# Frameworks
+Frameworks
+----------
 
 Currently we have the following implementations:
 * Python
   * [Flask](flask)
 
 
-# Load Testing
-## Testing With Beast (https://github.com/jjmrocha/beast)
+Load Testing
+------------
+### Testing With Beast (https://github.com/jjmrocha/beast)
 
 ___Setup___
 
@@ -100,7 +103,7 @@ ___How to Test___
 3. Run script `beast_delete.sh` to delete the data from the database
 
 ---
-## Testing With JMeter (https://jmeter.apache.org/)
+### Testing With JMeter (https://jmeter.apache.org/)
 
 ___Setup___
 
@@ -152,3 +155,8 @@ You can see the execution:
 
 And see a graph with the results for all endpoints:
 ![alt text](__images__/alt_graph.png "Graph results")
+
+
+License
+-------
+Any contributions made under this project will be governed by the [MIT License](./LICENSE.md).
