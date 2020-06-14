@@ -2,7 +2,17 @@ package net.uiqui.load.apps.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Application {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
+
+@Entity
+@Table(name = "application")
+public class Application implements Serializable {
+    @Id
+    @Column(name = "app_id")
     @JsonProperty("app-id")
     private Integer appId;
     @JsonProperty("name")

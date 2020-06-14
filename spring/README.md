@@ -6,6 +6,7 @@ Specs
 
 * Language: Java 11
 * Framework: Spring-boot
+* ORM: JPA
 * DB Migration: Flyway
 * Database: Postgres 12
 * HTTP Server: Undertow
@@ -19,7 +20,7 @@ How to Run
     docker-compose build
     ```
 
-2. Launch database in backgound
+2. Launch database in background
 
     ```commandline
     docker-compose up -d db

@@ -20,7 +20,7 @@ How to Run
     docker-compose build
     ```
 
-2. Launch database in backgound
+2. Launch database in background
 
     ```commandline
     docker-compose up -d db
