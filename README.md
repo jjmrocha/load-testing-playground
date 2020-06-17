@@ -9,7 +9,20 @@ Specs for the Tested Application
     ```
     {"app-id": {app-id}, "name": "{app name}"}
     ```
+    
+    Response Status:
+    - 200 If the `app_id` already exists, in this case the name must be updated
+    - 201 If the `app_id` didn't exists, in this case the record should been created
   * `GET /apps/{app_id}`
+  
+    Response Status:
+    - 200 If the `app_id` was found
+    - 404 If the `app_id` doesn't exists
+    
+    Respose Body:
+    ```
+    {"app-id": {app-id}, "name": "{app name}"}
+    ```
   * `DELETE /apps/{app_id}`
   2. The endpoinds should be available on `127.0.0.1:8080`
 3. Data must be stored on a `Postgres 12` database
@@ -179,6 +192,9 @@ summary =  10120 in 00:00:13 =  781.2/s Avg:     7 Min:     2 Max:    59 Err:   
 Tidying up ...    @ Wed Jun 17 20:15:13 WEST 2020 (1592421313072)
 ... end of run
 ```
+
+
+___Client-Server___
 
 In case a single machine is unable to simulate enough users to stress the server you can use the client-server approach and control multiple JMeter servers (running remotely) from a single JMeter client. For more information please check the [documentation](https://jmeter.apache.org/usermanual/remote-test.html)
 
