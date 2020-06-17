@@ -158,6 +158,31 @@ And see a graph with the results for all endpoints:
 ![alt text](__images__/alt_graph.png "Graph results")
 
 
+___Non GUI Execution___
+
+To run without GUI, you can use the command:
+```commandline
+jmeter -t <scrip name> -n -l <output file>
+```
+
+Example:
+```
+$ jmeter -t jmeter.jmx -n -l jmeter.out                                                                                    1 ↵
+Creating summariser <summary>
+Created the tree successfully using jmeter.jmx
+Starting standalone test @ Wed Jun 17 20:14:59 WEST 2020 (1592421299872)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Warning: Nashorn engine is planned to be removed from a future JDK release
+summary +      1 in 00:00:00 =    6.0/s Avg:    35 Min:    35 Max:    35 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +  10119 in 00:00:13 =  791.4/s Avg:     7 Min:     2 Max:    59 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =  10120 in 00:00:13 =  781.2/s Avg:     7 Min:     2 Max:    59 Err:     0 (0.00%)
+Tidying up ...    @ Wed Jun 17 20:15:13 WEST 2020 (1592421313072)
+... end of run
+```
+
+In case a single machine is unable to simulate enough users to stress the server you can use the client-server approach and control multiple JMeter servers (running remotely) from a single JMeter client. For more information please check the [documentation](https://jmeter.apache.org/usermanual/remote-test.html)
+
+
 License
 -------
 Any contributions made under this project will be governed by the [MIT License](./LICENSE.md).
