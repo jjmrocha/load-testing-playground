@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  title: Apps App API
+  description: https://github.com/jjmrocha/load-testing-playground
+  version: "1"
+servers:
+  - url: 'http://localhost:8080'
+    description: Local environment
+components:
+  parameters:
+    param-app-id:
+      name: app_id
+      in: path
+      required: true
+      description: Application ID
+      schema:
+        type: integer
+  responses:
+    status-not-found:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/app-obj'
+  schemas:
+    app-obj:
+      description: App Object
+      type: object
+      properties:
+        app-id:
+          type: integer
+        name:
+          type: string
+paths:
+  '/apps/{app_id}':
+    get:
+      summary: Returns the App object
+      parameters:
+        - $ref: '#/components/parameters/param-app-id'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/app-obj'
+        '404':
+          description: Not Found
+    put:
+      summary: Creates or updates the App object
+      parameters:
+        - $ref: '#/components/parameters/param-app-id'
+      requestBody:
+        description: App object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/app-obj'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/app-obj'
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/app-obj'
+        '404':
+          description: Invalid request
+    delete:
+      summary: Deletes the App
+      parameters:
+        - $ref: '#/components/parameters/param-app-id'
+      responses:
+        '200':
+          description: OK
