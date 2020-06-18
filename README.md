@@ -25,7 +25,8 @@ Currently we have the following implementations:
 
 Load Testing
 ------------
-### Testing With Beast (https://github.com/jjmrocha/beast)
+### Testing With Beast
+(https://github.com/jjmrocha/beast)
 
 ___Setup___
 
@@ -103,7 +104,8 @@ ___How to Test___
 3. Run script `beast_delete.sh` to delete the data from the database
 
 ---
-### Testing With JMeter (https://jmeter.apache.org/)
+### Testing With JMeter
+(https://jmeter.apache.org/)
 
 ___Setup___
 
