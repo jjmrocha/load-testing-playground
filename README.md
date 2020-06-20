@@ -23,8 +23,8 @@ Currently we have the following implementations:
 * [Starlette](starlette) (Python)
 
 
-Load Testing
-------------
+Testing Tools
+-------------
 
 Currently we have the following scripts testing tools:
 * [the Beast](beast)
