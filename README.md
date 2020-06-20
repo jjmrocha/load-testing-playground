@@ -28,7 +28,7 @@ Load Testing
 
 Currently we have the following scripts testing tools:
 * [the Beast](beast)
-* [JMeter](jmeter) (Java)
+* [JMeter](jmeter)
 
 Some scripts load test data from the following CSV file [test_data.csv](test_data.csv).
 
