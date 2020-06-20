@@ -1,32 +1,18 @@
 Load Testing Playground
 =======================
 
-Specs for the Tested Application
---------------------------------
+Specification for the Tested Application
+----------------------------------------
 
 1. The frameworks being tested will implement the following endpoints:
-  * `PUT /apps/{app_id}` - With Body: 
-    ```
-    {"app-id": {app-id}, "name": "{app name}"}
-    ```
-    
-    Response Status:
-    - 200 If the `app_id` already exists, in this case the name must be updated
-    - 201 If the `app_id` didn't exists, in this case the record should been created
+  * `PUT /apps/{app_id}`
   * `GET /apps/{app_id}`
-  
-    Response Status:
-    - 200 If the `app_id` was found
-    - 404 If the `app_id` doesn't exists
-    
-    Respose Body:
-    ```
-    {"app-id": {app-id}, "name": "{app name}"}
-    ```
   * `DELETE /apps/{app_id}`
-  2. The endpoinds should be available on `127.0.0.1:8080`
+2. The endpoinds should be available on `127.0.0.1:8080`
 3. Data must be stored on a `Postgres 12` database
 
+For more details please check the OpenAPI Specification file [app-open-api.yaml](https://editor.swagger.io/?url=https://raw.githubusercontent.com/jjmrocha/load-testing-playground/master/app-open-api.yaml)
+  
 
 Frameworks
 ----------
@@ -39,7 +25,8 @@ Currently we have the following implementations:
 
 Load Testing
 ------------
-### Testing With Beast (https://github.com/jjmrocha/beast)
+### Testing With Beast
+(https://github.com/jjmrocha/beast)
 
 ___Setup___
 
@@ -117,7 +104,8 @@ ___How to Test___
 3. Run script `beast_delete.sh` to delete the data from the database
 
 ---
-### Testing With JMeter (https://jmeter.apache.org/)
+### Testing With JMeter
+(https://jmeter.apache.org/)
 
 ___Setup___
 
