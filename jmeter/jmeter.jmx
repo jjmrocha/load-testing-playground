@@ -40,17 +40,17 @@
           </elementProp>
           <elementProp name="runs" elementType="Argument">
             <stringProp name="Argument.name">runs</stringProp>
-            <stringProp name="Argument.value">10000</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">number of runs for each thread</stringProp>
           </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Test data apps.cvs" enabled="true">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Test data ../test_data.cvs" enabled="true">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
-        <stringProp name="filename">./apps.csv</stringProp>
+        <stringProp name="filename">../test_data.csv</stringProp>
         <boolProp name="ignoreFirstLine">false</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
@@ -124,7 +124,7 @@
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Inspect" enabled="false">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Inspect" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -240,8 +240,8 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
-          <stringProp name="RespTimeGraph.interval">1000</stringProp>
+          <stringProp name="filename">/Users/joaqcos/SOURCES/load-testing-playground/jmeter.out</stringProp>
+          <stringProp name="RespTimeGraph.interval">100</stringProp>
           <stringProp name="RespTimeGraph.graphtitle">Time Graph</stringProp>
         </ResultCollector>
         <hashTree/>
@@ -290,7 +290,7 @@
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="Results" enabled="false">
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="Results" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -362,7 +362,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">/Users/joaqcos/SOURCES/load-testing-playground/jmeter.out</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>

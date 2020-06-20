@@ -1,0 +1,9 @@
+{
+	"disable-compression": true,
+	"disable-keep-alives": false,
+	"max-connections": 0,
+	"max-idle-connections": 0,
+	"request-timeout": 30,
+	"disable-certificate-check": false,
+	"disable-redirects": true
+}
