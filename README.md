@@ -20,7 +20,7 @@ Frameworks
 Currently we have the following implementations:
 * [Flask](flask) (Python)
 * [Spring-boot](spring) (Java)
-* [Starlette](starlette) (Python)
+* [Starlette](starlette) (Python - asyncio)
 
 
 Testing Tools
