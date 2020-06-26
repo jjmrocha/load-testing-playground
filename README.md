@@ -21,6 +21,7 @@ Currently we have the following implementations:
 * [Flask](flask) (Python)
 * [Spring-boot](spring) (Java)
 * [Starlette](starlette) (Python - asyncio)
+* [Echo](echo) (GO)
 
 
 Testing Tools
