@@ -9,7 +9,7 @@ Specs
 * ORM: GORM
 * DB Migration: GORM
 * Database: Postgres 12
-* HTTP Server: Echo
+* HTTP Server: FastHTTP
 
 How to Run
 ----------
