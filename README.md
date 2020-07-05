@@ -22,6 +22,7 @@ Currently we have the following implementations:
 * [Spring-boot](spring) (Java)
 * [Starlette](starlette) (Python - asyncio)
 * [Echo](echo) (GO)
+* [Fiber](fiber) (GO)
 
 
 Testing Tools
