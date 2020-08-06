@@ -13,4 +13,4 @@ then
 	REQUESTS=$1
 fi
 
-beast run -n $REQUESTS -c $CONCURRENT -config config.json -data ../test_data.csv apps_get.yaml
+beast run -n $REQUESTS -c $CONCURRENT -config config.json -data ../test_data.csv -output get_$CONCURRENT.csv apps_get.yaml
