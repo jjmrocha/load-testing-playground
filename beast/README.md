@@ -78,3 +78,9 @@ How to Test
     ```
 
 3. Run script `beast_delete.sh` to delete the data from the database
+
+
+How to Analyze the Results
+--------------------------
+
+To analyze the execution results you can use as a starting point the tools found in the project [jjmrocha/beast-analytics](https://github.com/jjmrocha/beast-analytics)
